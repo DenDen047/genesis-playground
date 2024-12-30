@@ -1,4 +1,16 @@
-# Pytorch Project Template
+# Genesis Playground
+
+## Setup on macOS (M-series)
+
+```bash
+$ CONDA_SUBDIR=osx-arm64 conda create -n genesis python=3.12
+$ conda activate genesis
+$ conda env config vars set CONDA_SUBDIR=osx-arm64
+$ conda deactivate
+$ conda activate genesis
+$ pip install genesis-world
+$ pip install torch
+```
 
 ## Usage
 
@@ -8,9 +20,7 @@ $ docker compose down && docker compose up -d --build && docker exec -it [contai
 ```
 
 ```bash
-$ pyenv install 3.10.16
-$ pyenv local 3.10.16
-$ python -m venv .venv
+$ python3.12 -m venv .venv
 $ source .venv/bin/activate
 
 ## pip install ...
